@@ -1,6 +1,6 @@
 # BLUETOOTH CONFIGURATION FOR ARCH LINUX
 
-Bluetooth configuration for _Arch Linux_ (Endevour Os)
+Bluetooth configuration for _Arch Linux_ (Endeavour Os)
 
 ## INSTALLATION
 
@@ -10,11 +10,11 @@ Bluetooth configuration for _Arch Linux_ (Endevour Os)
 - The generic Bluetooth driver is the btusb kernel module. Check whether that module is loaded. If it is not, then load the module.
 - Start/enable bluetooth.service.
 
-### INSTALL PACKAGES
+#### INSTALL PACKAGES
 ~~~ sh
 	$ sudo pacman -S bluez bluez-utils
 ~~~
-### CONTROL BLUETOOTH MODULE
+#### CHECK BLUETOOTH MODULE
 
 To see if the bluetooth module is present
 
@@ -22,7 +22,7 @@ To see if the bluetooth module is present
 	$ lsmod | grep btusb
 ~~~
 ## CONFIGURATION
-### START AND ENABLE BLUETOOTH SERVICE
+#### START AND ENABLE BLUETOOTH SERVICE
 
 ~~~ sh
 	$ sudo systemctl start bluetooth.service
@@ -32,7 +32,7 @@ To see if the bluetooth module is present
 	$ sudo systemctl enable bluetooth.service
 ~~~
 
-### START BLUETOOTHCTL
+#### START BLUETOOTHCTL
 Launch the command of the bluetooth
 
 ~~~ sh
